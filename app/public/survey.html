@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="iSurvey" class="container" style="background-color:lavenderblush">
+    <h3>About You</h3>
+    <h4>To get the best match possible please complete the following survey</h4>
+    <h4>Choose a number in the range of 1 (Least Favorite)  to  5 (Most Favorite).</h4>
+    <h5>Name (Required)</h5>
+    <input type="text" id="name" class="form-control" required>
+    <h5> Link to Your Photo (Required)</h5>
+    <input type="text" id="pic" class="form-control" width="400px;" required>
+    <form name="pInfo" style="color: black">
+        <div class="allQuests">
+            <div class="pQuestOne">
+                <h4>1. Can he/she be a smoker?</h4>
+                <div class="qOne">
+                    <a><span>Smoker</span></a>
+                    <input type="radio" name="qOne1" value="1">
+                    <input type="radio" name="qOne2" value="2">
+                    <input type="radio" name="qOne3" value="3">
+                    <input type="radio" name="qOne4" value="4">
+                    <input type="radio" name="qOne5" value="5">
+                    <a><span>Non-Smoker</span></a>
+                </div>
+            </div>
+            <div class="pQuestTwo">
+                <h4>2. Should he/she know the color of George Washington's white horse?</h4>
+                <div class="qTwo">
+                    <a><span>No</span></a>
+                    <input type="radio" name="qTwo1" value="1">
+                    <input type="radio" name="qTwo2" value="2">
+                    <input type="radio" name="qTwo3" value="3">
+                    <input type="radio" name="qTwo4" value="4">
+                    <input type="radio" name="qTwo5" value="5">
+                    <a><span>Yes</span></a>
+                </div>
+            </div>
+            <div class="pQuestThree">
+                <h4>3. Can he/she need to be from another planet?</h4>
+                <div class="qThree">
+                    <a><span>Different planet</span></a>
+                    <input type="radio" name="qThree1" value="1">
+                    <input type="radio" name="qThree2" value="2">
+                    <input type="radio" name="qThree3" value="3">
+                    <input type="radio" name="qThree4" value="4">
+                    <input type="radio" name="qThree5" value="5">
+                    <a><span>Same planet</span></a>
+                </div>
+            </div>
+            <div class="pQuestFour">
+                <h4>4.  Does he/she need to like camping?</h4>
+                <div class="qFour">
+                    <a><span>Dislikes Camping</span></a>
+                    <input type="radio" name="qFour1" value="1">
+                    <input type="radio" name="qFour2" value="2">
+                    <input type="radio" name="qFour3" value="3">
+                    <input type="radio" name="qFour4" value="4">
+                    <input type="radio" name="qFour5" value="5">
+                    <a><span>Likes Camping</span></a>
+                </div>
+            </div>
+            <div class="pQuestFive">
+                <h4>5.  Should he/she like to dine out frequently?</h4>
+                <div class="qFive">
+                    <a><span>No Dining Out</span></a>
+                    <input type="radio" name="qFive1" value="1">
+                    <input type="radio" name="qFive2" value="2">
+                    <input type="radio" name="qFive3" value="3">
+                    <input type="radio" name="qFive4" value="4">
+                    <input type="radio" name="qFive5" value="5">
+                    <a><span>Frequent Dining Out</span></a>
+                </div>
+            </div>
+            <div class="pQuestSix">
+                <h4>6.  How important is going to the beach together?</h4>
+                <div class="qSix">
+                    <a><span>Least Important</span></a>
+                    <input type="radio" name="qSix1" value="1">
+                    <input type="radio" name="qSix2" value="2">
+                    <input type="radio" name="qSix3" value="3">
+                    <input type="radio" name="qSix4" value="4">
+                    <input type="radio" name="qSix5" value="5">
+                    <a><span>Very Important</span></a>
+                </div>
+            </div>
+            <div class="pQuestSeven">
+                <h4>7.  Can he/she be a person who prefers grilled foods?</h4>
+                <div class="qSeven">
+                    <a><span>Dislikes grilled foods</span></a>
+                    <input type="radio" name="qSeven1" value="1">
+                    <input type="radio" name="qSeven2" value="2">
+                    <input type="radio" name="qSeven3" value="3">
+                    <input type="radio" name="qSeven4" value="4">
+                    <input type="radio" name="qSeven5" value="5">
+                    <a><span>Likes grilled foods</span></a>
+                </div>
+            </div>
+            <div class="pQuestEight">
+                <h4>8.  Does he/she need to enjoy riding a motorcycle?</h4>
+                <div class="qEight">
+                    <a><span>No</span></a>
+                    <input type="radio" name="qEight1" value="1">
+                    <input type="radio" name="qEight2" value="2">
+                    <input type="radio" name="qEight3" value="3">
+                    <input type="radio" name="qEight4" value="4">
+                    <input type="radio" name="qEight5" value="5">
+                    <a><span>Yes</span></a>
+                </div>
+            </div>
+            <div class="pQuestNine">
+                <h4>9.  Should he/she drink alcohol?</h4>
+                <div class="qNine">
+                    <a><span>No Drinking</span></a>
+                    <input type="radio" name="qNine1" value="1">
+                    <input type="radio" name="qNine2" value="2">
+                    <input type="radio" name="qNine3" value="3">
+                    <input type="radio" name="qNine4" value="4">
+                    <input type="radio" name="qNine5" value="5">
+                    <a><span>Drinks Alcohol</span></a>
+                </div>
+            </div>
+            <div class="pQuestTen">
+                <h4>10.  Can he/she have green hair and a outey bellybutton?</h4>
+                <div class="qTen">
+                    <a><span>No</span></a>
+                    <input type="radio" name="qTen1" value="1">
+                    <input type="radio" name="qTen2" value="2">
+                    <input type="radio" name="qTen3" value="3">
+                    <input type="radio" name="qTen4" value="4">
+                    <input type="radio" name="qTen5" value="5">
+                    <a><span>Yes</span></a>
+                </div>
+            </div>
+            <button type="button" style="font-size:24px;background-color:whitesmoke;color:#ff0000">
+                <span class="glyphicon glyphicon-credit-card"></span>Submit Survey
+                <i class="fa fa-heartbeat"></i>
+            </button>
+        </div>   <!-- END div allQuests -->
+
+        <div id="results-modal" class="modal fade" role="dialog" style="display: none;">>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </form>
+</div>     <!--  END div iSurvey  -->
+
+</body>
+</html>
