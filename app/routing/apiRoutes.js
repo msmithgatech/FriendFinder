@@ -1,9 +1,11 @@
-var allFriends = require("../app/data/allFriends");
-var myMatches = require("../app/data/myMatches");
+var allFriends = require("./../data/allFriends");
+var myMatches = require("./../data/myMatches");
 
+
+//  USE EXPRESS TO ROUTE TO THIS URL (/api/allFriends, /api/myMatches)
 module.exports = function(app) {
 
-    app.post("submit", function (req, res) {
+    app.post("/submit", function (req, res) {
         var addFriend = req.body;
         allFriends.push(addFriend);
         console.log(addFriend);
@@ -11,17 +13,13 @@ module.exports = function(app) {
     });
 
 
-    app.get("api/allFriends", function (req, res) {
+    app.get("/api/allFriends", function (req, res) {
         res.json(allFriends);
     });
 
 
-    app.get("api/myMatches", function (req, res) {
+    app.get("/api/myMatches", function (req, res) {
        res.json(myMatches);
     });
-
-
-
-
 
 };

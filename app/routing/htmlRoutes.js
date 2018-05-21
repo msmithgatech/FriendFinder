@@ -1,7 +1,9 @@
 var path = require("path");
 
 
-module.exports= function(app) {
+        //  ORDER IS IMPORTANT....ALL OTHER ROUTES NEED TO BE BEFORE HOME
+
+module.exports = function(app) {
     //  IF THE SURVEY BUTTON WAS PRESSED, DISPLAY THE SURVEY PAGE
     app.get("/survey", function (req, res) {
         res.sendFile(path.join(__dirname, "/../public/survey.html"));

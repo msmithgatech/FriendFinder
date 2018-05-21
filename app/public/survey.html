@@ -15,11 +15,11 @@
     <h3>About You</h3>
     <h4>To get the best match possible please complete the following survey</h4>
     <h4>Choose a number in the range of 1 (Least Favorite)  to  5 (Most Favorite).</h4>
-    <h5>Name (Required)</h5>
-    <input type="text" id="name" class="form-control" required>
-    <h5> Link to Your Photo (Required)</h5>
-    <input type="text" id="pic" class="form-control" width="400px;" required>
-    <form name="pInfo" style="color: black">
+    <form name="pInfo" action="/submit" method="post" style="color: black">
+        <h5>Name (Required)</h5>
+        <input type="text" name="name" class="form-control" required>
+        <h5> Link to Your Photo (Required)</h5>
+        <input type="text" name="pic" class="form-control" width="400px;" required>
         <div class="allQuests">
             <div class="pQuestOne">
                 <h4>1. Can he/she be a smoker?</h4>
@@ -141,7 +141,7 @@
                     <a><span>Yes</span></a>
                 </div>
             </div>
-            <button type="button" style="font-size:24px;background-color:whitesmoke;color:#ff0000">
+            <button type="submit" style="font-size:24px;background-color:whitesmoke;color:#ff0000">
                 <span class="glyphicon glyphicon-credit-card"></span>Submit Survey
                 <i class="fa fa-heartbeat"></i>
             </button>
@@ -173,3 +173,7 @@
 
 </body>
 </html>
+
+
+<script type="text/javascript">
+
